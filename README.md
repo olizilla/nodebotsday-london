@@ -8,21 +8,21 @@ NodeBots Day - London
 
 ## Nuno
 
-— Space (needs wifi)
-— Contacts with Merchants
-  — Cool Components .co .uk
-  — James Governor for IoT companies; FabLab kind of thing
+- Space (needs wifi)
+- Contacts with Merchants
+  - Cool Components .co .uk
+  - James Governor for IoT companies; FabLab kind of thing
 
 ## Jerome
 
-— Contacts with Merchants
-  — Parrott thru Nuno introduction (Felix G)
-— Walk thru instructions for building a project from ground up
+- Contacts with Merchants
+  - Parrott thru Nuno introduction (Felix G)
+- Walk thru instructions for building a project from ground up
 
 ## Oli
 
-— Content for tito
-— London Hackspace
+- Content for tito
+- London Hackspace
 http://wiki.london.hackspace.org.uk/view/London_Hackspace
-— DorkBot London - http://dorkbotlondon.org
-— Schedule the next two meetings (general nodebots, our own progress)
+- DorkBot London - http://dorkbotlondon.org
+- Schedule the next two meetings (general nodebots, our own progress)
