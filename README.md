@@ -18,6 +18,7 @@ NodeBots Day - London
 - Contacts with Merchants
   - Parrott thru Nuno introduction (Felix G)
 - Walk thru instructions for building a project from ground up
+  - basic repo for the cat contoller [Here](https://github.com/gorhgorh/catRemote)   
 
 ## Oli
 
