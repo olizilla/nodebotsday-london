@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="On July 27, 2013, hackers all around the world will gather in their local communities and build stuff.">
 <link rel="shortcut icon" href="favicon.ico">
-<title>London NodeBots Day</title>
+<title>NodeBots Day London</title>
 <style type="text/css">
 body {
 	background: #FFF;
@@ -67,12 +67,63 @@ footer{
 strong{
 	font-weight: 600;
 }
+.burst {
+    background: rgb(233,46,39);
+    width: 80px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+}
+.burst:before, .burst:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background: rgb(233,46,39);
+}
+.burst:before {
+    -webkit-transform: rotate(30deg);
+       -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+         -o-transform: rotate(30deg);
+}
+.burst:after {
+    -webkit-transform: rotate(60deg);
+       -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+         -o-transform: rotate(60deg);
+
+}
+.banner .burst{
+	text-align: center;
+}
+.burst .msg{
+	position: absolute;
+	top:0;
+	left:0;
+	width:80px;
+	padding-top: 18px;
+	z-index: 500;
+	font-weight: bold;
+	color: #EEE;
+}
+.burst .msg:hover{
+	color: rgb(240,219,79);
+	color: #FFF;
+}
 </style>
 </head>
 <body>
 	<header class="banner">
+		<div class="burst">
+			<a class="msg" href="https://tito.io/nodeuk/nodebotsday-london">
+			Grab a 
+			Ticket<br>
+			</a>
+		</div>
 	</header>
-
 	<h2 id="london-nodebots-day">NodeBots Day London?</h2>
 	<p>
 		<strong><a href="https://tito.io/nodeuk/nodebotsday-london">On July 27<sup>th</sup>, 2013, we'll meet up in London and hack</a></strong> on Arduinos, Rasberry Pis, NodeCopters, robots, and any other gizmos that need more input...		
@@ -108,7 +159,7 @@ strong{
 			<li><a href="http://cpc.farnell.com/arduino/k000007/starter-kit-arduino-with-uno-board/dp/SC12835?Ntt=SC12835">Arduino.cc Starter kit</a></li>
 			<li><a href="http://oomlout.co.uk/collections/arduino/products/arduino-starter-kit-ardx">oomlout Starter Kit for Ardunio</a></li>
 		</ul>
-		<p>Don't worry if you don't have all the things, there will be a nodecopter or 2, a rasberry pi, and others people with similar problems to solve.</p>
+		<p>Don't worry if you don't have all the things, there will be a nodecopter or 2, a rasberry pi, and other people with similar problems to solve.</p>
 		<p>
 			We'll be using <a href="https://twitter.com/rwaldron">@rwaldron</a>'s <a href="https://github.com/rwldrn/johnny-five">johnny-five</a> module. The <a href="https://github.com/rwldrn/johnny-five">gitub repo</a> has the docs and links to great tutorials and there are <a href="http://weblog.bocoup.com/category/johnny-five/">more tutorials on the bocoup site.</a>
 			If you want to get a headstart, then you should install node.js and johnny-five, plug in to your Ardunio, and start strobing LED's and moving matter.
