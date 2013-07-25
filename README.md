@@ -1,6 +1,14 @@
 NodeBots Day - London
 =====================
 
+## Links
+Chris Williams - Keynote - http://youtu.be/zEn4Pj3XqE8
+
+Chris Williams - Blinky - http://www.youtube.com/watch?v=ndKQ7f7JMlg
+
+Idea - Useless box - http://www.youtube.com/watch?v=apVR5Htz0K4
+
+
 27th July, 2013
 
 50 People / 100 Tickets
@@ -27,3 +35,4 @@ NodeBots Day - London
 http://wiki.london.hackspace.org.uk/view/London_Hackspace
 - DorkBot London - http://dorkbotlondon.org
 - Schedule the next two meetings (general nodebots, our own progress)
+
