@@ -90,7 +90,7 @@ a img {
   border: none;
 }
 body {
-  background: #f8e100;
+  background: #f6de1f;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   margin: 0;
@@ -169,7 +169,7 @@ h1 small {
   background-size: 100px 100px;
 }
 .pullout strong {
-  color: #f8e100;
+  color: #f6de1f;
   font-weight: normal;
 }
 @media screen and (min-width: 685px) {
