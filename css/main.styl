@@ -1,0 +1,226 @@
+@import 'nib'
+
+global-reset()
+
+body {
+  background: #f8e100
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+  font-weight: 300
+  margin:0
+}
+
+div#intro {
+  text-align: center
+  padding: 10px
+  color: #999
+  background: linear-gradient(top, black, #333)
+  text-shadow: 0px 2px #000
+}
+
+header {
+  background: linear-gradient(top, #007407, #004a77, #781666)
+  padding: 50px 0 40px 0
+  //animation: swirlybackground 1s infinite
+  border-bottom: 10px solid #FFF
+  overflow: hidden
+}
+h1 {
+  text-align: center
+  font-size: 100px
+  color: white
+  animation: glow 1s infinite
+  font-family: 'Monofett', cursive;
+  font-family: 'Press Start 2P', cursive;
+  line-height: 1
+  transform: rotate(-5deg)
+  margin-left: 30px
+
+  text-shadow: blue 0px 0px 20px,   blue 0px 0px 20px,   blue 0px 0px 20px,
+               blue 0px 0px 20px,   blue 0px 0px 20px,   blue 0px 0px 20px;
+}
+h1 small {
+  font-size: 90px
+  display: block
+  margin-top: 20px
+}
+
+
+@media screen and (max-width: 1024px)
+  h1
+    font-size: 80px
+  h1 small
+    font-size: 70px
+    
+@media screen and (max-width: 600px)
+  h1
+    font-size: 50px
+  h1 small
+    font-size: 40px
+
+@keyframes glow {
+  0% {
+    text-shadow: springgreen  0px 0px 20px,   springgreen 0px 0px 20px,   springgreen 0px 0px 20px,
+                 springgreen 0px 0px 20px,   springgreen 0px 0px 20px,   springgreen 0px 0px 20px
+  }
+  20% {
+    text-shadow: yellow 0px 0px 20px,   yellow 0px 0px 20px,   yellow 0px 0px 20px,
+                 yellow 0px 0px 20px,   yellow 0px 0px 20px,   yellow 0px 0px 20px
+  }
+  40% {
+    text-shadow: chartreuse 0px 0px 20px,   chartreuse 0px 0px 20px,   chartreuse 0px 0px 20px,
+                 chartreuse 0px 0px 20px,   chartreuse 0px 0px 20px,   chartreuse 0px 0px 20px
+  }
+  60% {
+    text-shadow: cyan 0px 0px 20px,   cyan 0px 0px 20px,   cyan 0px 0px 20px,
+                 cyan 0px 0px 20px,   cyan 0px 0px 20px,   cyan 0px 0px 20px
+  }
+  80% {
+    text-shadow: fuchsia 0px 0px 20px,   fuchsia 0px 0px 20px,   fuchsia 0px 0px 20px,
+                 fuchsia 0px 0px 20px,   fuchsia 0px 0px 20px,   fuchsia 0px 0px 20px
+  }
+  100% {
+    text-shadow: springgreen  0px 0px 20px,   springgreen 0px 0px 20px,   springgreen 0px 0px 20px,
+                 springgreen 0px 0px 20px,   springgreen 0px 0px 20px,   springgreen 0px 0px 20px
+  }
+}
+
+@keyframes swirlybackground {
+  0% {
+    background: linear-gradient(top, #007407, #004a77, #781666)
+  }
+  50% {
+    background: linear-gradient(top, #781666, #004a77, #007407)
+  }
+  100% {
+    background: linear-gradient(top, #007407, #004a77, #781666)
+  }
+}
+
+.pullout {
+  background-color: #333
+  color: #FFF
+  padding: 10px 10px 10px 130px
+  max-width: 34em
+  margin: 1em auto
+  
+  background: url(../images/nodebot-logo.png) no-repeat 20px 30px #333
+  background-size: 100px 100px
+}
+.pullout strong {
+  color: #f8e100
+  font-weight: normal
+}
+
+@media screen and (min-width: 685px)
+  .pullout
+    border-radius: 3px
+
+a {
+  color: rgb(180,30,30)
+  text-decoration: none
+}
+a:hover {
+  text-decoration: underline
+}
+strong, h2 {
+  color: rgb(180,30,30)
+  font-weight: bold
+}
+h2, p {
+  padding:0 10px
+}
+h2{
+  max-width: 40em
+  margin: auto
+}
+p, ul {
+  max-width: 40em
+  margin: 1em auto
+  line-height: 1.6em
+}
+img {
+  max-width: 40em
+  margin: 1em auto
+  display: block
+}
+#challenges li {
+  width: 130px
+  display: inline-block
+  margin: 0 10px 10px 0
+  border: 5px solid #333
+  text-align: center
+  background-color: #EEE
+}
+#challenges li span {
+  display: none
+}
+#challenges li a {
+  display: block
+  padding: 50px 10px
+  text-decoration: none
+  color: #333
+  font-weight: bold
+}
+#challenges li:hover {
+  background-color: #FFF
+}
+#challenges li.locked {
+  border-style: dashed
+  border-color: #999
+  background-color: #CCC
+}
+#challenges li.locked a {
+  
+}
+#challenges li.locked:hover {
+  background-color: #DDD
+}
+#challenges li.locked span {
+  display: block
+  position: absolute
+  transform: rotate(-45deg)
+  color: #999
+  font-weight: bold
+  font-size: 30px
+  margin: 50px 0 0 10px
+}
+
+iframe {
+  display: block
+  margin: 10px auto
+  max-width: 40em
+}
+
+footer {
+  padding: 10px
+  text-align: center
+  line-height: 1.6em
+  background: #333
+  color: #999
+  text-shadow: 0px 2px #000
+}
+footer a {
+  text-decoration: none
+  color: #CCC
+}
+footer a:hover {
+  text-decoration: underline
+  color: #FFF
+}
+footer a.kano-link:hover {
+  color: #ff6b00
+}
+footer a.tableflip-link:hover {
+  color: #13cea7
+}
+footer a.gitter-link, footer a.gitter-link:hover {
+  text-decoration: none
+  background: url(https://badges.gitter.im/gitterHQ/gitter.png)
+  display: block
+  width: 148px
+  padding-top: 18px
+  height: 0
+  overflow: hidden
+  margin: auto
+  margin-top: 4px
+}

@@ -1,175 +1,103 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="On July 27, 2013, hackers all around the world will gather in their local communities and build stuff.">
-<link rel="shortcut icon" href="favicon.ico">
-<title>NodeBots Day London</title>
-<style type="text/css">
-body {
-	background: #FFF;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-	font-weight: 300;
-	margin:0;
-}
-.banner {
-	background: rgb(240,219,79) url(https://d2z6c3c3r6k4bx.cloudfront.net/uploads/event/logo/633/display_display_jfive.png) no-repeat 75% 35%;
-	height: 260px;
-}
-@media only screen and (min-width: 840px) {
-	.banner {
-		background: rgb(240,219,79) url(https://d2z6c3c3r6k4bx.cloudfront.net/uploads/event/banner/633/nodebotsday.v1.png) no-repeat center top;
-	}
-}
-.events,
-.events li{
-	display: inline;
-}
-.show-me{
-	padding: 1px 0 500px;
-	background: rgb(240,219,79) url(https://d2z6c3c3r6k4bx.cloudfront.net/uploads/event/logo/633/display_display_jfive.png) no-repeat bottom right;
-}
-h2,
-p {
-	padding:0 10px;
-}
-h2{
-	max-width: 35.4em;	
-	margin: 1em auto 0.4em;
-}
-p,ul{
-	max-width: 40em;
-	margin: 1em auto;
-	line-height: 1.6em;
-}
-a{
-	text-decoration: none;
-	color: rgb(180,30,30);
-}
-a:hover{
-	color: rgb(255,47,40);	
-	/*color: rgb(210,47,40);*/
-}
-iframe {
-	margin: 1em auto;
-	display: block;
-}
-.robotsconf{
-	background-image: url(http://robotsconf.com/img/footer-logo.png);
-}
-footer{
-	padding: 2em 0;
-	text-align: center;
-	line-height: 1.6em;
-}
-strong{
-	font-weight: 600;
-}
-.burst {
-    background: rgb(233,46,39);
-    width: 80px;
-    height: 80px;
-    position: relative;
-    text-align: center;
-}
-.burst:before, .burst:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 80px;
-    width: 80px;
-    background: rgb(233,46,39);
-}
-.burst:before {
-    -webkit-transform: rotate(30deg);
-       -moz-transform: rotate(30deg);
-        -ms-transform: rotate(30deg);
-         -o-transform: rotate(30deg);
-}
-.burst:after {
-    -webkit-transform: rotate(60deg);
-       -moz-transform: rotate(60deg);
-        -ms-transform: rotate(60deg);
-         -o-transform: rotate(60deg);
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="On July 27, 2013, hackers all around the world will gather in their local communities and build stuff.">
+    <title>NodeBots Day London</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/main.css" type="text/css" rel="stylesheet"/>
+    <link href='http://fonts.googleapis.com/css?family=Monofett|Press+Start+2P' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    
+    <div id="intro">
+      The JavaScript Adventure Club presents:
+    </div>
+    <header>
+      <h1>NodeBot<br>Battle<br>Royale<small>2015</small></h1>
+    </header>
+    
+    <div class="pullout">
+      <p>2015 sees the first <strong>NodeBot Battle Royale</strong>.  From Feburary, NodeBots of London will be running a team based NodeBots competition.</p>
+      <p>No experience is necessary, just creativity, a hot glue gun and a soldering iron.  Maybe a <strike>debugger</strike> multi-meter too.</p>
+    </div>
+    
+    <h2>How does it work?</h2>
+    <p>Every month a new challenge will be issued, along with parts and a reference design.</p>
+    <p>Be warned - if you just use the reference design, you are unlikely to win! How will you modify the design to give your robot the edge?  Will you throw it out entirely?  It's up to you.</p>
+    <p>Points will be awarded to the winners and runners up and bonus points will be awarded for carnage, creativity and others.</p>
+    <p>At the end of the competition a trophy will be awarded to the winners.</p>
+    
+    <h2>What should I bring?</h2>
+    <p>You are encouraged to bring tools extra components but spare parts, wood, dremels, etc will be available for you to use.</p>
+    <p>At the very least, an <a href="http://www.amazon.co.uk/s/ref=nb_sb_noss_1?url=search-alias%3Daps&field-keywords=arduino%20starter%20kit&sprefix=arduino+%2Caps">Arduino Starter Kit</a> is advisable.</p>
+    <p>A small fee will be payable in advance to cover materials.</p>
+    
+    <img src="images/catbot.jpg">
+    
+    <h2>How do I enter?</h2>
+    <p>A sign up link will be available soon.</p>
+    
+    <h2>I don't have a team!</h2>
+    <p>Teams will be allocated on the day. You are encouraged to stay in the same team for the duration of the competition, but if you want to swap, that's fine too.</p>
+    
+    <img src="images/robot.jpg">
+    
+    <h2>I'm a beginner!</h2>
+    <p>Great! Beginners are more than welcome - there's nothing like getting stuck in to learn so you'll be assigned to a team.</p>
+    <p>We'll still be running our regular beginner workshops and you get a head start by completing the <a href="https://www.npmjs.com/package/nodebot-workshop">NodeBot Workshop</a> (no hardware required).</p>
+    
+    <h2>Meh, I just want to hack on stuff</h2>
+    <p>Come on down!  You might have to do a show and tell at the end though.</p>
+    
+    <img src="images/lasers.jpg">
+    
+    <h2>Challenges</h2>
+    <ul id="challenges">
+      <li class="locked">
+        <span>Locked</span>
+        <a href="#">Challenge #1</a>
+      </li>
+      <li class="locked">
+        <span>Locked</span>
+        <a href="#">Challenge #2</a>
+      </li>
+      <li class="locked">
+        <span>Locked</span>
+        <a href="#">Challenge #3</a>
+      </li>
+      <li class="locked">
+        <span>Locked</span>
+        <a href="#">Challenge #4</a>
+      </li>
+      <li class="locked">
+        <span>Locked</span>
+        <a href="#">Challenge #5</a>
+      </li>
+      <li class="locked">
+        <span>Locked</span>
+        <a href="#">Challenge #6</a>
+      </li>
+    </ul>
+    
+    <h2>Leaderboard</h2>
+    <p>Comming soon!</p>
 
-}
-.banner .burst{
-	text-align: center;
-}
-.burst .msg{
-	position: absolute;
-	top:0;
-	left:0;
-	width:80px;
-	padding-top: 18px;
-	z-index: 500;
-	font-weight: bold;
-	color: #EEE;
-}
-.burst .msg:hover{
-	color: rgb(240,219,79);
-	color: #FFF;
-}
-</style>
-</head>
-<body>
-	<header class="banner">
-	</header>
-	<h2 id="london-nodebots-day">NodeBots Day London?</h2>
-	<p>
-		<strong><a href="https://tito.io/nodeuk/nodebotsday-london">On July 27<sup>th</sup>, 2013, we'll meet up in London and hack</a></strong> on Arduinos, Rasberry Pis, NodeCopters, robots, and any other gizmos that need more input...		
-	</p>
-	
-	<h2 id="nodebots-day">NodeBots Day?</h2>
-	<p>
-	<strong><a href="https://medium.com/geek-empire-1/ab02970d74e1">On July 27<sup>th</sup>, 2013, people all over the world will meet up to build robots</a></strong>, program copters, solder, hack and learn. Events are already schdueled for:
-		<a href="https://tito.io/nodebotsday/nodebotsday-sf">San Francisco</a>,
-		<a href="https://tito.io/nodebotsday/nodebotsday-nyc">New York</a>,
-		<a href="http://nodebotssyd.eventbrite.com/">Sydney</a>,
-		<a href="http://nodebotsday.com">and more</a>...
-	</p>
-	
-	<h2 id="nodebots">NodeBots?</h2>
-	<p>
-		<strong><a href="http://nodebots.io/">Robots, powered by node.js.</a></strong> That's right, if you've any JavaScript experience, you can now use your powers to manipulate the machines. 
-		From <a title="Das Blinkenlight" href="http://www.youtube.com/watch?v=VYEBB-0CSiw">blinking lights</a> 
-		through to <a href="http://nodebots.io/sumo.html">Sumo Bot battles</a>, 
-		<a href="http://www.youtube.com/watch?v=6NYyGC-wZKU">Remote control cats</a>, 
-		and <a href="https://github.com/substack/matador-copter">Bull fighting with helicopters.</a>
-	</p>
-	
-	<div class="show-me">
-		<h2>Need more input?</h2>
+    <h2>Examples</h2>
+    <iframe width="100%" height="360" src="http://www.youtube.com/embed/pmp_hCg6jGQ" frameborder="0" allowfullscreen=""></iframe>
+    
+    <h2>Sponsors</h2>
+    <p>We are actively seeking sponsors for hardware and food. <a href="http://www.twitter.com/nodebotsuk">Get in touch</a> - we promise to say nice things about you!</p>
 
-		<iframe width="640" height="360" src="http://www.youtube.com/embed/6NYyGC-wZKU" frameborder="0" allowfullscreen></iframe>
+    <h2>Credits</h2>
+    <p>Largely inspired by the rather excellent <a href="http://nodebots.codemash.org/">NodeBots @CodeMash</a>.</p>
 
-		<p>For this event, <strong>you will need to bring your own hardware and ideas</strong>. Don't be scared. That means a laptop, an <a href="http://oomlout.co.uk/products/arduino-uno">Arduino</a>, curiosity and components available from all good widget retailers</p>
-		<p>If you're just gettting started then a starter kit might help:</p>
-		<ul>
-			<li><a href="http://www.hobbytronics.co.uk/kits/sparkfun-inventors-kit">Hobbytronics: SparkFun Inventor's Kit for Arduino</a></li>
-			<li><a href="http://www.hobbytronics.co.uk/robotics/robot-kits/zumo-robot-kit">Hobbytronics: Zumo Robot Kit</a></li>
-			<li><a href="http://cpc.farnell.com/arduino/k000007/starter-kit-arduino-with-uno-board/dp/SC12835?Ntt=SC12835">CPC: Arduino.cc Starter kit</a></li>
-			<li><a href="http://oomlout.co.uk/collections/arduino/products/arduino-starter-kit-ardx">oomlout: Starter Kit for Ardunio</a></li>
-		</ul>
-		<p>Don't worry if you don't have all the things, there will be a nodecopter or 2, a rasberry pi, and other people with similar problems to solve.</p>
-		<p>
-			We'll be using <a href="https://twitter.com/rwaldron">@rwaldron</a>'s <a href="https://github.com/rwldrn/johnny-five">johnny-five</a> module. The <a href="https://github.com/rwldrn/johnny-five">gitub repo</a> has the docs and links to great tutorials and there are <a href="http://weblog.bocoup.com/category/johnny-five/">more tutorials on the bocoup site.</a>
-			If you want to get a headstart, then you should install node.js and johnny-five, plug in to your Ardunio, and start strobing LED's and moving matter.
-		</p>
-		<a title="More NodeBots" class="nodebots" href="http://nodebots.io/"></a>
-		<a title="More johnny-five" class="j5" href="https://github.com/rwldrn/johnny-five"></a>
-		<a title="More robotsconf" class="robgotsconf" href="http://robotsconf.com/"></a>
-		<a href="http://weblog.bocoup.com/category/johnny-five/"></a>
-
-		<iframe width="640" height="480" src="http://www.youtube.com/embed/VYEBB-0CSiw" frameborder="0" allowfullscreen></iframe>
-	</div>
-	<footer>
-		<strong>NodeBots Day London is ALIVE</strong>
-		<br>
-		<a href="https://twitter.com/olizilla">@olizilla</a>, <a href="https://twitter.com/dscape">@dscape</a>, <a href="https://twitter.com/gorhgorh">@gorhgorh</a>
-	</footer>
-</body>
+    <footer>
+      Herded by <a href="http://tableflip.io" class="tableflip-link">TABLEFLIP</a> and hosted by <a href="http://kano.me" class="kano-link">Kano</a><br />
+      <a href="https://twitter.com/nodebotsuk">@nodebotsuk</a><br />
+      <a href="https://gitter.im/nodebots/london" class="gitter-link">Gitter</a>
+    </footer>
+  </body>
 </html>
