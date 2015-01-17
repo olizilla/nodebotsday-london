@@ -875,7 +875,7 @@ footer a.gitter-link:hover {
   display: block;
 }
 #challenges li#challenge1 {
-  background: url("../images/challenge-1-bg-1.png") center center no-repeat;
+  background: url("../images/challenge-1-bg-1.png"), url("../images/challenge-1-bg-0.gif") center center no-repeat;
   -webkit-background-size: 135px 135px;
   -moz-background-size: 135px 135px;
   background-size: 135px 135px;
