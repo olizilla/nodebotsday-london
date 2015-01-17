@@ -1,0 +1,72 @@
+@import 'main'
+@import 'nodebot'
+
+#challenges {
+  text-align: center
+}
+#challenges li {
+  width: 130px
+  height: 130px
+  display: inline-block
+  margin: 0 10px 10px 0
+  border: 5px solid #333
+  text-align: center
+  background-color: #EEE
+  font-size: 25px
+}
+#challenges li small {
+  font-size: 40px
+  padding-top: 40px
+  display: block
+}
+#challenges li#challenge1 {
+  background: url(../images/challenge-1-bg-1.png) center center no-repeat
+  background-size: 135px 135px
+  margin-top: 0
+}
+#challenges li#challenge1:hover {
+  background-image: url(../images/challenge-1-bg-1.png), url(../images/challenge-1-bg-2.gif)
+}
+#challenges li#challenge1 a {
+  color: #f6de1f
+  text-shadow: #000 0 0 2px, #000 2px 2px, #000 2px 2px, #000 2px 2px
+}
+#challenges li span {
+  display: none
+}
+#challenges li a {
+  display: block
+  padding: 36px 0 42px 0
+  text-decoration: none
+  color: #999
+  font-weight: bold
+}
+#challenges li:hover {
+  background-color: #FFF
+}
+#challenges li.locked {
+  border-style: dashed
+  border-color: #999
+  background-color: #CCC
+}
+#challenges li.locked a {
+  
+}
+#challenges li.locked:hover {
+  background-color: #DDD
+}
+#challenges li.locked span {
+  display: block
+  position: absolute
+  transform: rotate(-45deg)
+  color: #999
+  font-weight: bold
+  font-size: 30px
+  margin: 50px 0 0 10px
+}
+
+iframe {
+  display: block
+  margin: 10px auto
+  max-width: 40em
+}
