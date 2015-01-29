@@ -405,8 +405,8 @@ footer a:hover {
   text-decoration: underline;
   color: #fff;
 }
-footer a.kano-link:hover {
-  color: #ff6b00;
+footer a.host-link:hover {
+  color: #78b8b9;
 }
 footer a.tableflip-link:hover {
   color: #13cea7;
