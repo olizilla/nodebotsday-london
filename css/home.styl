@@ -1,72 +1,101 @@
 @import 'main'
 @import 'nodebot'
 
-#challenges {
-  text-align: center
-}
-#challenges li {
-  width: 130px
-  height: 130px
-  display: inline-block
-  margin: 0 10px 10px 0
-  border: 5px solid #333
-  text-align: center
-  background-color: #EEE
-  font-size: 25px
-}
-#challenges li small {
-  font-size: 40px
-  padding-top: 40px
-  display: block
-}
-#challenges li#challenge1 {
-  background: url(../images/sumo.png), url(../images/sumo-grey.gif) center center no-repeat
-  background-size: 135px 135px
-  margin-top: 0
-}
-#challenges li#challenge1:hover {
-  background-image: url(../images/sumo.png), url(../images/sumo-colour.gif)
-}
-#challenges li#challenge1 a {
-  color: #f6de1f
-  text-shadow: #000 0 0 2px, #000 2px 2px, #000 2px 2px, #000 2px 2px
-}
-#challenges li span {
-  display: none
-}
-#challenges li a {
-  display: block
-  padding: 36px 0 42px 0
-  text-decoration: none
-  color: #999
-  font-weight: bold
-}
-#challenges li:hover {
-  background-color: #FFF
-}
-#challenges li.locked {
-  border-style: dashed
-  border-color: #999
-  background-color: #CCC
-}
-#challenges li.locked a {
-  
-}
-#challenges li.locked:hover {
-  background-color: #DDD
-}
-#challenges li.locked span {
-  display: block
-  position: absolute
-  transform: rotate(-45deg)
-  color: #999
-  font-weight: bold
-  font-size: 30px
-  margin: 50px 0 0 10px
+header {
+  width:100%
+  height: 93vh
+  background: radial-gradient(#222, #323232);
+  padding-top: 7vh
+
+  h1 {
+    background: transparent url("../images/nodebots-of-london.min.svg") no-repeat center center
+    height: 0px
+    width: 490px
+    padding-top: 340px
+    overflow: hidden
+    margin: 0 auto 5vh auto
+  }
+
+  small {
+    margin: 5vh auto
+    display: block
+    text-align: center
+    font-size: 1.4em
+
+    a, a:hover a:visited a:link a:active {
+      color: #FFF
+      text-decoration: none
+    }
+
+    a:hover {
+      color: #F7DF1F
+    }
+
+    a {
+      margin: 10px
+
+      span {
+        display: inline-block
+        height: 20px
+        width: 20px
+      }
+
+      span#twitter {
+        background: transparent url("../images/twitter.min.svg") no-repeat center center
+        background-size: cover
+      }
+
+      span#gitter {
+        background: transparent url("../images/gitter.min.svg") no-repeat center center
+        background-size: cover
+      }
+
+      span#meetup {
+        background: transparent url("../images/meetup.min.svg") no-repeat center center
+        background-size: contain
+      }
+    }
+  }
+
+  section#next-meetup {
+    width: 490px
+    background: #FFF
+    margin: auto
+    padding: 20px
+    text-align: center
+    border-radius: 3px
+    min-height: auto
+  }
 }
 
-iframe {
-  display: block
-  margin: 10px auto
-  max-width: 40em
+section div {
+  max-width: 800px
+  background-color: rgba(255, 255, 255, 0.9)
+  margin: auto
+  padding: 20px
+  border-radius: 3px
+}
+
+section {
+  padding: 30vh 0 5vh 0
+  background: #666 url("../images/robot.jpg") no-repeat center center
+  background-size: cover
+  margin: 20px 0
+  min-height: 50vh
+}
+
+section#intro {
+  background-image: url("../images/robot.jpg")
+}
+
+section#equipment {
+  background-image: url("../images/lasers.jpg")
+}
+
+section#prerequisites {
+  background-image: url("../images/library.jpg")
+}
+
+section#sponsors {
+  background-image: url("../images/bluetooth.jpg")
 }

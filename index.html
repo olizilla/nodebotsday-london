@@ -8,116 +8,64 @@
     <title>NodeBots of London - NodeBot Battle Royal 2015</title>
     <link rel="shortcut icon" href="favicon.png">
     <link href="css/home.css" type="text/css" rel="stylesheet"/>
-    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    
-    <div id="intro">
+    <div id="adventure-club">
       The JavaScript Adventure Club presents:
     </div>
+
     <header>
-      <h1>NodeBot<br>Battle<br>Royale<small>2015</small></h1>
+      <h1>NodeBots of London</h1>
+      <small>
+        <a href="https://twitter.com/nodebotsuk"><span id="twitter"></span> @NodeBotsUK</a>
+        <a href="https://gitter.im/nodebots/london"><span id="gitter"></span> nodebots/london</a>
+        <a href="https://www.meetup.com/NodeBots-of-London"><span id="meetup"></span> Meetup.com</a>
+      </small>
+      <section id="next-meetup">
+        <h2>Next meetup</h2>
+        <p>NodeBots is usually on the last Sunday of the month but nothing is currently organised for this month.</p>
+        <p>See <a href="http://www.meetup.com/NodeBots-of-London/events/past">past meetups</a> or <a href="http://www.meetup.com/NodeBots-of-London/">join the Meetup group</a> to be notified when new meetups are posted!</p>
+      </section>
     </header>
-    
-    <div class="pullout">
-      <div class="nodebot">
-        <div class="icon">
-          <div class="bobble"></div>
-          <div class="antenna"></div>
-          <div class="head">
-            <div class="eye left"></div>
-            <div class="eye right"></div>
-          </div>
-          <div class="neck"></div>
-          <div class="neck"></div>
-        </div>
+
+    <section id="intro">
+      <div>
+        <h3>What is it?</h3>
+        <p>NodeBots of London is a semi regular meetup to hack on hardware using JavaScript.</p>
+        <p>We'll build robots, fly node copters and perhaps inadvertently kickstart the robot apocalypse.</p>
       </div>
-      
-      <p>2015 sees the first <strong>NodeBot Battle Royale</strong>.  From Feburary, NodeBots of London will be running a team based NodeBots competition.</p>
-      <p>No experience is necessary, just creativity, a hot glue gun and a soldering iron.  Maybe a <strike>hardware debugger</strike> multi-meter too.</p>
-    </div>
-    
-    <h2>How does it work?</h2>
-    <p>Every month a new challenge will be issued, along with parts and a reference design.</p>
-    <p>Be warned - if you just use the reference design, you are unlikely to win! How will you modify the design to give your robot the edge?  Will you throw it out entirely?  It's up to you.</p>
-    <p>Points will be awarded to the winners and runners up and bonus points will be awarded for carnage, creativity and others.</p>
-    <p>At the end of the competition a trophy will be awarded to the winners.</p>
-    
-    <h2>What should I bring?</h2>
-    <p>You are encouraged to bring tools extra components but spare parts, wood, dremels, etc will be available for you to use.</p>
-    <p>At the very least, an <a href="http://www.amazon.co.uk/s/ref=nb_sb_noss_1?url=search-alias%3Daps&field-keywords=arduino%20starter%20kit&sprefix=arduino+%2Caps">Arduino Starter Kit</a> is advisable.</p>
-    
-    <img src="images/catbot.jpg">
-    
-    <h2>How do I enter?</h2>
-    <p>Sign up on <a href="http://www.meetup.com/NodeBots-of-London/events/220115230/">meetup.com</a> and if required, purchase a <a href="https://ti.to/tableflip/nodebot-battle-royale-2015-1-sumobots">reference kit</a>.</p>
-    
-    <h2>I don't have a team!</h2>
-    <p>Teams will be allocated on the day. You are encouraged to stay in the same team for the duration of the competition, but if you want to swap, that's fine too.</p>
-    
-    <img src="images/robot.jpg">
-    
-    <h2>I'm a beginner!</h2>
-    <p>Great! Beginners are more than welcome - there's nothing like getting stuck in to learn so you'll be assigned to a team.</p>
-    <p>We'll still be running our regular beginner workshops and you get a head start by completing the <a href="https://www.npmjs.com/package/nodebot-workshop">NodeBot Workshop</a> (no hardware required).</p>
-    
-    <h2>Meh, I just want to hack on stuff</h2>
-    <p>Come on down!  You might have to do a show and tell at the end though.</p>
-    
-    <img src="images/lasers.jpg">
-    
-    <h2>Challenges</h2>
-    <ul id="challenges">
-      <li id="challenge1">
-        <a href="challenge-1-sumobots.html">
-          <small>#1</small> SumoBots
-        </a>
-      </li>
-      <li class="locked">
-        <a href="javascript:void()">
-          <small>#2</small> Locked
-        </a>
-      </li>
-      <li class="locked">
-        <a href="javascript:void()">
-          <small>#3</small> Locked
-        </a>
-      </li>
-      <li class="locked">
-        <a href="javascript:void()">
-          <small>#4</small> Locked
-        </a>
-      </li>
-      <li class="locked">
-        <a href="javascript:void()">
-          <small>#5</small> Locked
-        </a>
-      </li>
-      <li class="locked">
-        <a href="javascript:void()">
-          <small>#6</small> Locked
-        </a>
-      </li>
-    </ul>
+    </section>
 
-    <h2>Leaderboard</h2>
-    <p>Comming soon!</p>
+    <section id="equipment">
+      <div>
+        <h3>What should I bring?</h3>
+        <p>All you need is a laptop. The <a href="https://github.com/tableflip/nodebots-library/blob/master/london.md">NodeBots of London Esoteric Hardware Library</a> stands ready to provide for your hardware needs on the day but if you are a beginner you may wish to pick up an <a href="http://www.amazon.co.uk/s/ref=nb_sb_noss_1?url=search-alias%3Daps&field-keywords=arduino%20starter%20kit&sprefix=arduino+%2Caps">Arduino Starter Kit</a> to continue hacking at home.</p>
+        <p>Otherwise if you have a project, bring it along to get help and feedback on your idea.</p>
+        <p>Soldering irons, dremels and other tools are available for you to use.</p>
+      </div>
+    </section>
 
-    <h2>Examples</h2>
-    <iframe width="100%" height="360" src="http://www.youtube.com/embed/pmp_hCg6jGQ" frameborder="0" allowfullscreen=""></iframe>
-    
-    <h2>Sponsors</h2>
-    <p>We are actively seeking sponsors for hardware and food. <a href="http://www.twitter.com/nodebotsuk">Get in touch</a> - we promise to say nice things about you!</p>
+    <section id="prerequisites">
+      <div>
+        <h3>Do I need to do anything before I arrive?</h3>
+        <p>If you are a beginner, try the <a href="https://libraries.io/npm/nodebot-workshop">nodebot-workshop</a> - it will give you a feel for hardware programming without needing access to any actual hardware.</p>
+        <p>Please ensure you have a working C compiler installed - on Windows install <a href="https://www.visualstudio.com">Visual Studio</a>, on a Mac please install <a href="https://itunes.apple.com/gb/app/xcode/id497799835">Xcode</a>. On Linux you probably have one already.</p>
+      </div>
+    </section>
 
-    <h2>Credits</h2>
-    <p>Largely inspired by the rather excellent <a href="http://nodebots.codemash.org/">NodeBots @CodeMash</a>.</p>
+    <section id="sponsors">
+      <div>
+        <h3>Sponsors</h3>
+        <p>Robot Logic - <a href="http://robotlogic.io">http://robotlogic.io</a></p>
+        <p>Tableflip - <a href="http://tableflip.io">http://tableflip.io</a></p>
+        <p>Jailmake - <a href="http://jailmake.com">http://jailmake.com</a></p>
+      </div>
+    </section>
 
     <footer>
-      Herded by <a href="http://tableflip.io" class="tableflip-link">TABLEFLIP</a> and hosted by <a href="http://foundersandcoders.org/" class="host-link">Founders &amp; Coders</a><br />
-      <a href="https://twitter.com/nodebotsuk">@nodebotsuk</a><br />
-      <a href="https://gitter.im/nodebots/london" class="gitter-link">Gitter</a>
+      <p><a href="http://nodebots.io">nodebots.io</a></p>
     </footer>
-    
+
     <script src="javascript/k.js" type="text/javascript"></script>
     <script src="javascript/main.js" type="text/javascript"></script>
   </body>

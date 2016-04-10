@@ -1,0 +1,23 @@
+{
+  "name": "london.nodebots.io",
+  "version": "1.0.0",
+  "description": "london.nodebots.io website",
+  "scripts": {
+    "start": "nodemon -e js,styl,html --exec './node_modules/.bin/stylus css/home.styl -o css/home.css && ./node_modules/.bin/serve'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olizilla/nodebotsday-london.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olizilla/nodebotsday-london/issues"
+  },
+  "homepage": "https://github.com/olizilla/nodebotsday-london#readme",
+  "devDependencies": {
+    "nodemon": "^1.9.1",
+    "serve": "^1.4.0",
+    "stylus": "^0.54.2"
+  }
+}
