@@ -9,6 +9,7 @@ header {
 
   h1 {
     background: transparent url("../images/nodebots-of-london.min.svg") no-repeat center center
+    background-size: contain
     height: 0px
     width: 490px
     padding-top: 340px
@@ -25,6 +26,8 @@ header {
     a, a:hover a:visited a:link a:active {
       color: #FFF
       text-decoration: none
+      white-space: nowrap
+      line-height: 1.4
     }
 
     a:hover {
@@ -98,4 +101,18 @@ section#prerequisites {
 
 section#sponsors {
   background-image: url("../images/bluetooth.jpg")
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    height: auto
+
+    h1 {
+      width: 90%
+    }
+
+    section#next-meetup {
+      width: auto
+    }
+  }
 }
