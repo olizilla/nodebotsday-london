@@ -1,11 +1,4 @@
 (function() {
-  // Detect if the browser is IE or not.
-  // If it is not IE, we assume that the browser is NS.
-  var IE = document.all?true:false
-
-  // If NS -- that is, !IE -- then set up for mouse capture
-  if (!IE) document.captureEvents(Event.MOUSEMOVE)
-
   var Faux3d = function (tag, elements) {
     this.el = document.getElementsByTagName(tag)[0]
 
@@ -19,22 +12,8 @@
   }
 
   Faux3d.prototype._onMouseMove = function (elements, e) {
-    var x = 0
-    var y = 0
-
-    if (IE) {
-      x = event.clientX + document.body.scrollLeft
-      y = event.clientY + document.body.scrollTop
-    } else {
-      x = e.pageX
-      y = e.pageY
-    }
-
-    x = x < 0 ? 0 : x
-    y = y < 0 ? 0 : y
-
-    this._mouseX = x
-    this._mouseY = y
+    this._mouseX = e.pageX < 0 ? 0 : e.pageX
+    this._mouseY = e.pageY < 0 ? 0 : e.pageY
 
     return true
   }
@@ -51,9 +30,6 @@
 
     elements.forEach(function (path, index) {
       var factor = (1 + ((numElements - index) * widthMultiplier))
-      //var offset = (0.5 * headerWidth - x)
-      //offset *= factor - 1
-
       var offset = (headerWidth / 8) - this._mouseX
       offset *= factor - 1
 
