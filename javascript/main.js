@@ -71,7 +71,7 @@
       }
     }
     // fuck you meetup api. https://github.com/meetup/api/issues/130
-    httpRequest.open('GET', 'https://jsonp.afeld.me/?url=https://api.meetup.com/nodebots-of-london/events?photo-host=secure&sig_id=12125832&sig=283dcf3b6096023ffa68e7d7257714756fdc37b0', true)
+    httpRequest.open('GET', 'https://jsonp.afeld.me/?url=https%3A%2F%2Fapi.meetup.com%2Fnodebots-of-london%2Fevents%3Fphoto-host%3Dsecure%26page%3D20%26sig_id%3D12125832%26fields%3Drsvp_rules%26sig%3De32f13d641bee311e94cc6f781c769167548b8b9', true)
     httpRequest.send(null)
   }
 
@@ -98,13 +98,31 @@
       html.push('<p>NodeBots is usually on the last Sunday of the month but nothing is currently organised for this month.</p>')
       html.push('<p>See <a href="http://www.meetup.com/NodeBots-of-London/events/past">past meetups</a> or <a href="http://www.meetup.com/NodeBots-of-London/">join the Meetup group</a> to be notified when new meetups are posted!</p>')
     } else {
+      var now = new Date()
       var date = new Date(meetup.time)
       var venue = 'https://www.google.com/maps?q=' + meetup.venue.lat + '%20' + meetup.venue.lon + '&z=16&ll=' + meetup.venue.lat + ',' + meetup.venue.lon
 
-      html.push('<p>The next NodeBots meetup is on ' + DAYS[date.getDay()] + ' ' + MONTHS[date.getMonth()] + ' ' + date.getDate() + ' at ' + date.getHours() + ':' + date.getMinutes() + ' ' + (date.getHours() < 12 ? 'AM' : 'PM') + '</p>')
+      if (date.getYear() === now.getYear() && date.getMonth() === now.getMonth() && date.getDate() === now.getDate()) {
+        var end = meetup.time + meetup.duration
+
+        if (Date.now() < meetup.time) {
+          html.push('<p>The next NodeBots meetup is today!</p>')
+        } else if (end > Date.now()) {
+          html.push('<p>The NodeBots meetup is underway!</p>')
+        } else {
+          html.push('<p>Today\'s NodeBots meetup has finished, see you next month?</p>')
+          html.push('<p><a href="http://www.meetup.com/NodeBots-of-London/">Join the meetup group</a> to find out about the next one.</p>')
+        }
+      }  else {
+        html.push('<p>The next NodeBots meetup is on ' + DAYS[date.getDay()] + ' ' + MONTHS[date.getMonth()] + ' ' + date.getDate() + ' at ' + date.getHours() + ':' + date.getMinutes() + ' ' + (date.getHours() < 12 ? 'AM' : 'PM') + '</p>')
+      }
+
       html.push('<p>' + meetup.venue.name + ', ' + meetup.venue.address_1 + ' - <a href="' + venue + '">Map</a></p>')
 
-      if (meetup.yes_rsvp_count < meetup.rsvp_limit) {
+      if (meetup.rsvp_rules.close_time < now.getTime()) {
+        html.push('<p>Sorry, RSVPs have closed for this meetup.</p>')
+        html.push('<p><a href="http://www.meetup.com/NodeBots-of-London/">Join the meetup group</a> to find out about the next one.</p>')
+      } else if (meetup.yes_rsvp_count < meetup.rsvp_limit) {
         html.push('<p>There are ' + (meetup.rsvp_limit - meetup.yes_rsvp_count) + ' spaces left, <a href="' + meetup.link + '">sign up here!</a></p>')
       } else {
         html.push('<p>Sorry, there are no spaces left!</p>')
